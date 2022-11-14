@@ -11,9 +11,6 @@ while (count <= number1)
     {
         Console.Write(evenNumber + ", ");
     }
-    else if (evenNumber == number1 )
-    {
-        Console.Write(evenNumber);
-    }
+   
      count ++;
 }
