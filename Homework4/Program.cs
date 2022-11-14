@@ -7,10 +7,17 @@ Console.Write($"{number1} -> ");
 while (count <= number1)
 {
     evenNumber = count;
-    if (evenNumber % 2 == 0 && evenNumber > 0 && evenNumber < number1)
+    if (evenNumber % 2 == 0 && evenNumber > 0 && evenNumber < number1-1)
     {
         Console.Write(evenNumber + ", ");
+    }  
+    else if (evenNumber > number1 - 1 && evenNumber %2 == 1)
+    {
+        Console.Write(evenNumber-1);
     }
-   
-     count ++;
+    else if (evenNumber == number1 && evenNumber % 2 == 0)
+    {
+        Console.Write(evenNumber);
+    }
+    count ++;
 }
